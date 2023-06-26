@@ -1,0 +1,40 @@
+Given I make a bad request
+I should see a helpful error message
+
+
+Given I am logged in
+And Given I request to see agent details
+With correct params
+I should see
+"symbol"=>"SHAMPS",
+"credits"=>150000,
+
+
+https://spacetraders.stoplight.io/docs/spacetraders/64435cafd9005-list-ships
+Given I am logged in
+And Given I request to see my ships
+I should see a list of ships
+name
+role
+departure
+	system
+	location
+destination
+    system
+    location
+departureTime
+arrivalTime
+status
+cargo
+	capacity
+	units
+		inventory
+			name
+			description
+			units
+fuel
+	current
+   	capacity
+   	consumed
+    	amount
+    	timestamp
